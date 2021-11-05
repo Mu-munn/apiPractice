@@ -1,0 +1,162 @@
+#aaa {
+  overflow: hidden;
+}
+
+.youtube {
+  width: 900px;
+  margin: 30px auto 0;
+}
+
+.youtube-link {
+  display: flex;
+  text-decoration: none;
+  color: #0d0d0d;
+  border: 1px solid #0d0d0d;
+  transition: opacity 0.6s;
+}
+.youtube-link:hover {
+  opacity: 0.7;
+}
+
+.youtube-image-wrap {
+  position: relative;
+  width: 320px;
+}
+
+.youtube-image {
+  width: 100%;
+  vertical-align: top;
+}
+
+.youtube-duration {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px 6px;
+}
+
+.youtube-content {
+  flex: 1;
+  padding: 10px 20px;
+}
+
+.youtube-title {
+  font-size: 16px;
+}
+
+.youtube-detail {
+  font-size: 12px;
+  color: #606060;
+}
+
+.youtube-channel:hover {
+  color: #0d0d0d;
+}
+
+.youtube-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* 以下　動的生成に応じて適用 */
+.card {
+  margin: 20px auto;
+  width: 90%;
+  height: auto;
+}
+.card__imgframe img {
+  width: 100%;
+  height: auto;
+  /*background: url(https://placehold.jp/640x360.png) no-repeat center;*/
+  box-sizing: border-box;
+}
+.underContens {
+  display: flex;
+}
+.card__textbox {
+  width: 80%;
+  height: auto;
+  padding: 20px 18px;
+
+  box-sizing: border-box;
+}
+.card__textbox > * + * {
+  margin-top: 10px;
+}
+.card__titletext {
+  font-size: 20px;
+  font-weight: bold;
+  /* line-height: 125%;*/
+}
+.card__overviewtext {
+  font-size: 12px;
+  /*line-height: 150%;*/
+}
+.card-skin {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+/*　検索フォーム　*/
+.search_container {
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #3879d9;
+  display: block;
+  padding: 3px 10px;
+  border-radius: 3px;
+  height: 2.3em;
+  width: 90%;
+  overflow: hidden;
+  margin: 10px auto;
+}
+.search_container input[type="text"] {
+  border: none;
+  height: 2em;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container button {
+  cursor: pointer;
+  border: none;
+  background: #3879d9;
+  color: #fff;
+  position: absolute;
+  width: 4em;
+  height: 3em;
+  right: 0px;
+  top: -5px;
+  outline: none;
+}
+/*以下ボタン*/
+.download-button {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: 20%;
+  height: auto;
+}
+.btn-partial-line {
+  position: relative;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  color: #668ad8;
+}
+/* くらーくするパネール */
+.popup-bg-cover {
+  position: fixed; /* ブラウザの定位置に固定 */
+  background: rgba(0, 0, 0, 0.5); /* 背景色を半透明の黒色に */
+  width: 100%; /* 要素の横幅を画面全体に */
+  height: 100%; /* 要素の高さを画面全体に */
+  top: 0; /* 要素の固定位置をブラウザ最上部に合わせる */
+  left: 0; /* 要素の固定位置をブラウザ左側に合わせる */
+  z-index: 1000; /* 要素をコンテンツより前面に（要調整） */
+}
